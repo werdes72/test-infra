@@ -313,7 +313,7 @@ function installKyma() {
 
     shout "Use released artifacts from version ${LAST_RELEASE_VERSION}"
     date
-
+    set -x
     if [[ "$LAST_RELEASE_VERSION" == "1.14.0" ]]; then
         curl -L --silent --fail --show-error "https://github.com/kyma-project/kyma/releases/download/${LAST_RELEASE_VERSION}/kyma-installer-cluster.yaml" --output /tmp/kyma-gke-upgradeability/last-release-installer.yaml
         kubectl apply -f /tmp/kyma-gke-upgradeability/last-release-installer.yaml
@@ -324,7 +324,7 @@ function installKyma() {
         kubectl apply -f /tmp/kyma-gke-upgradeability/kyma-installer.yaml
         kubectl apply -f /tmp/kyma-gke-upgradeability/kyma-installer-cr-cluster.yaml
     fi
-
+    set +x
 
     shout "Installation triggered with timeout ${KYMA_INSTALL_TIMEOUT}"
     date
