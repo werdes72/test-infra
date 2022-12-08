@@ -17,12 +17,12 @@ replace (
 )
 
 require (
-	cloud.google.com/go/bigquery v1.32.0
-	cloud.google.com/go/firestore v1.6.1
-	cloud.google.com/go/functions v1.3.0
-	cloud.google.com/go/logging v1.4.2
-	cloud.google.com/go/pubsub v1.21.1
-	cloud.google.com/go/storage v1.22.1
+	cloud.google.com/go/bigquery v1.44.0
+	cloud.google.com/go/firestore v1.9.0
+	cloud.google.com/go/functions v1.9.0
+	cloud.google.com/go/logging v1.6.1
+	cloud.google.com/go/pubsub v1.27.1
+	cloud.google.com/go/storage v1.27.0
 	github.com/Masterminds/goutils v1.1.1 // indirect
 	github.com/Masterminds/semver v1.5.0
 	github.com/Masterminds/sprig v2.22.0+incompatible
@@ -57,15 +57,15 @@ require (
 	github.com/spf13/cobra v1.4.0
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.10.0 // indirect
-	github.com/stretchr/testify v1.7.1
+	github.com/stretchr/testify v1.8.1
 	github.com/tidwall/gjson v1.14.1
 	github.com/vrischmann/envconfig v1.3.0
 	go.uber.org/zap v1.21.0
-	golang.org/x/net v0.0.0-20220520000938-2e3eb7b945c2
-	golang.org/x/oauth2 v0.0.0-20220411215720-9780585627b5
-	google.golang.org/api v0.81.0
+	golang.org/x/net v0.0.0-20221014081412-f15817d10f9b
+	golang.org/x/oauth2 v0.0.0-20221014153046-6fdb5e3db783
+	google.golang.org/api v0.104.0
 	gopkg.in/yaml.v2 v2.4.0
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
+	gopkg.in/yaml.v3 v3.0.1
 	k8s.io/api v0.22.2
 	k8s.io/apimachinery v0.22.2
 	k8s.io/client-go v11.0.1-0.20190805182717-6502b5e7b1b5+incompatible
